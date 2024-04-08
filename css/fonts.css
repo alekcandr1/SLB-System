@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-Black.eot');
+    src: local('../fonts/Steppe Black'), local('../fonts/Steppe-Black'),
+    url('../fonts/Steppe-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-Black.woff2') format('woff2'),
+    url('../fonts/Steppe-Black.woff') format('woff'),
+    url('../fonts/Steppe-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-Bold.eot');
+    src: local('../fonts/Steppe Bold'), local('../fonts/Steppe-Bold'),
+    url('../fonts/Steppe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-Bold.woff2') format('woff2'),
+    url('../fonts/Steppe-Bold.woff') format('woff'),
+    url('../fonts/Steppe-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-ExtraBold.eot');
+    src: local('../fonts/Steppe Extra Bold'), local('../fonts/Steppe-ExtraBold'),
+    url('../fonts/Steppe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Steppe-ExtraBold.woff') format('woff'),
+    url('../fonts/Steppe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-SemiBold.eot');
+    src: local('../fonts/Steppe Semi Bold'), local('../fonts/Steppe-SemiBold'),
+    url('../fonts/Steppe-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-SemiBold.woff2') format('woff2'),
+    url('../fonts/Steppe-SemiBold.woff') format('woff'),
+    url('../fonts/Steppe-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-Medium.eot');
+    src: local('../fonts/Steppe Medium'), local('../fonts/Steppe-Medium'),
+    url('../fonts/Steppe-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-Medium.woff2') format('woff2'),
+    url('../fonts/Steppe-Medium.woff') format('woff'),
+    url('../fonts/Steppe-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-Thin.eot');
+    src: local('../fonts/Steppe Thin'), local('../fonts/Steppe-Thin'),
+    url('../fonts/Steppe-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-Thin.woff2') format('woff2'),
+    url('../fonts/Steppe-Thin.woff') format('woff'),
+    url('../fonts/Steppe-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-Regular.eot');
+    src: local('../fonts/Steppe Regular'), local('../fonts/Steppe-Regular'),
+    url('../fonts/Steppe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-Regular.woff2') format('woff2'),
+    url('../fonts/Steppe-Regular.woff') format('woff'),
+    url('../fonts/Steppe-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Steppe';
+    src: url('../fonts/Steppe-Light.eot');
+    src: local('../fonts/Steppe Light'), local('../fonts/Steppe-Light'),
+    url('../fonts/Steppe-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Steppe-Light.woff2') format('woff2'),
+    url('../fonts/Steppe-Light.woff') format('woff'),
+    url('../fonts/Steppe-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

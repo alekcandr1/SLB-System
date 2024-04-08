@@ -1,0 +1,70 @@
+body {
+    font-family: 'Steppe', sans-serif;
+    font-size: 13px;
+    background-color: #F4F8FA;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Steppe', sans-serif;
+    font-weight: 800;
+    color: #F3F3F3;
+
+
+}
+
+.h1-desc {
+    font-weight: 300;
+    font-size: 18px;
+    color: #F3F3F3;
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.h2-desc {
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.h3-desc {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.btn1, .btn2 {
+    font-size: 15px;
+    padding: 11px 30px 8px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #F3F3F3;
+    width: max-content;
+}
+
+.btn1 {
+    background-color: #25569F;
+    border: 1px solid #25569F;
+}
+
+.btn2 {
+    font-size: 15px;
+    border: 1px solid #F3F3F3;
+}
+
+header {
+    background-color: #051A3A;
+    height: 100vh;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
