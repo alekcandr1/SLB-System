@@ -2,6 +2,7 @@ body {
     font-family: 'Steppe', sans-serif;
     font-size: 13px;
     background-color: #F4F8FA;
+    color: #373737
 }
 
 h1 {
@@ -9,7 +10,7 @@ h1 {
     font-family: 'Steppe', sans-serif;
     font-weight: 800;
     color: #F3F3F3;
-
+    line-height: 67px;
 
 }
 
@@ -110,7 +111,7 @@ header {
     max-width: 1280px;
     padding: 0 20px;
     box-sizing: border-box;
-
+    margin: 0 auto;
 }
 
 .wrap-header {
@@ -305,6 +306,7 @@ a {
     background: rgba(0, 0, 0, 0.4);
     z-index: 1; /* Задает z-индекс фона */
 }
+
 .pop2::before {
     content: "";
     position: absolute;
@@ -466,13 +468,10 @@ input:-ms-input-placeholder {
     font-weight: 300;
 }
 
-.service {
-    height: 100vh;
-}
-
 .pt150 {
     padding-top: 150px;
 }
+
 .tac {
     text-align: center;
 }
@@ -481,9 +480,60 @@ input:-ms-input-placeholder {
     width: 70%;
     padding-top: 20px;
 }
+
 .db {
     display: block;
 }
+
 .ma {
-    margin: auto;
+    margin: 0 auto;
+}
+
+.service-item {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.service-item h3 {
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.service-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-li {
+    display: flex;
+    gap: 15px;
+
+}
+
+.service-li p {
+    padding-top: 3px;
+}
+
+.service-items {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.service-item img {
+    display: block;
+    width: 40%;
+}
+
+.service-li > svg {
+    display: block;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.pb150 {
+    padding-bottom: 150px;
 }
