@@ -22,6 +22,7 @@ h1 {
 
 h2 {
     font-size: 40px;
+    font-weight: 800;
 }
 
 .h2-desc {
@@ -44,9 +45,12 @@ h4 {
     font-size: 15px;
     padding: 11px 30px 8px 30px;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 500;
     color: #F3F3F3;
     width: max-content;
+    min-width: max-content;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn1 {
@@ -55,9 +59,23 @@ h4 {
 }
 
 .btn2 {
-    font-size: 15px;
     border: 1px solid #F3F3F3;
 }
+
+
+.btn1:hover {
+    background-color: #F3F3F3;
+    border: 1px solid rgba(243, 243, 243, 0);
+    color: #454545;
+}
+
+.btn2:hover {
+    background-color: #F3F3F3;
+    border: 1px solid #F3F3F3;
+    color: #454545;
+
+}
+
 
 header {
     background-color: #051A3A;
@@ -65,6 +83,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #F3F3F3;
 
 }
 
@@ -93,6 +112,7 @@ header {
     box-sizing: border-box;
 
 }
+
 .wrap-header {
     width: 100%;
     padding-left: 80px;
@@ -114,10 +134,356 @@ header {
     width: 174px;
     height: 23px;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 22px 20px;
     box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav > ul > li {
+    list-style: none;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+nav > ul > li a {
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+nav > ul > li svg {
+    margin-top: -3px;
+}
+
+nav > ul > li.services > ul.submenu {
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    transition: all 0.5s;
+    width: max-content;
+    gap: 15px;
+    flex-direction: column;
+}
+
+nav > ul > li.services:hover > ul.submenu, nav > ul > li.services:hover > li.submenu:hover > ul.submenu {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F3F3F3;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #F3F3F3);
+    background-size: 0% 100%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+}
+
+nav a:hover::after {
+    background-size: 100% 100%;
+}
+
+.phone {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    min-width: max-content;
+}
+
+.phone a {
+    color: #F3F3F3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang a {
+    display: block;
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.popup.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 60px 60px 60px;
+    width: 95%;
+    max-width: 725px;
+    min-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #F3F3F3;
+
+}
+
+.pop1 {
+    background: url('../img/pop1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.pop2 {
+    background: url('../img/pop2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.pop1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1; /* Задает z-индекс фона */
+}
+.pop2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1; /* Задает z-индекс фона */
+}
+
+.popup-content-inner {
+    width: 100%;
+    position: relative;
+    z-index: 2; /* Задает z-индекс контента */
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
+
+.popup h2 {
+    padding-top: 50px;
+}
+
+.popup .h2-desc {
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.form-group {
+    flex: 1;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    fill: #999;
+}
+
+input {
+    padding: 10px 30px 10px 45px;
+    width: 100%;
+    border-width: 0px;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    transition: border ease 0.3s;
+
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form {
+    font-family: 'Steppe', sans-serif;
+    color: #F3F3F3;
+    padding-top: 50px;
+}
+
+form > button.btn1 {
+    font-family: 'Steppe', sans-serif;
+    color: #F3F3F3;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input::placeholder, input {
+    font-family: 'Steppe', sans-serif;
+    color: #F3F3F3;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+form svg {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+input:focus {
+    border: 1px solid #ffffff;
+    transition: border ease 0.3s;
+
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'Steppe', sans-serif;
+    color: #F3F3F3;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+input:-moz-placeholder {
+    font-family: 'Steppe', sans-serif;
+    color: #F3F3F3;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+input::-moz-placeholder {
+    font-family: 'Steppe', sans-serif;
+    color: #F3F3F3;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+input:-ms-input-placeholder {
+    font-family: 'Steppe', sans-serif;
+    color: #F3F3F3;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.popup-content a {
+    color: #F3F3F3;
+    text-decoration: underline;
+}
+
+.popup-content a:hover {
+    text-decoration: none;
+}
+
+.conf {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.service {
+    height: 100vh;
+}
+
+.pt150 {
+    padding-top: 150px;
+}
+.tac {
+    text-align: center;
+}
+
+.h2-desc-dop {
+    width: 70%;
+    padding-top: 20px;
+}
+.db {
+    display: block;
+}
+.ma {
+    margin: auto;
 }
