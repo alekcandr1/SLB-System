@@ -1387,6 +1387,9 @@ footer a:hover::after {
 
 
 @media screen and (max-width: 768px) {
+    .br2 {
+        display: none;
+    }
 
     .btn-header {
         display: none;
@@ -1572,6 +1575,7 @@ footer a:hover::after {
         flex-direction: column;
         gap: 70px;
     }
+
 
     .import-item-right {
         width: 100%;
