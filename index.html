@@ -10,6 +10,21 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
+<div class="loader-wrap"><span class="loader"></span></div>
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            var loaderWrap = document.querySelector('.loader-wrap');
+            loaderWrap.style.opacity = '0';
+            setTimeout(function() {
+                loaderWrap.style.display = 'none';
+            }, 300); // Задержка должна совпадать с продолжительностью transition (0.3s)
+            // Если вы используете jQuery, то вот так:
+            // $('.loader-wrap').css('opacity', '0').delay(300).hide();
+        }, 2000);
+    };
+
+</script>
 <div class="cursor-circle"></div>
 <div class="cursor-circle-shadow"></div>
 
